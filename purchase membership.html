@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Purchase membership</title>
+        <style type="text/css">
+            body{
+                background-color: rgb(15, 16, 23);
+            }
+            .item{
+                width: 200px;
+                height: 280px;
+                background-color: rgb(31, 33, 48);
+                border-radius: 12px;
+                padding: 5px 20px 5px 20px;
+            }
+            p#price{
+                font-family: 'Arial Narrow', Arial, sans-serif;
+                color:rgb(172, 175, 179);
+                text-align: center;
+                font-size: 20px;
+            }
+            p#name{
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                color: white;
+                text-align: center;
+                font-weight: 500;
+                font-size: 25px;
+            }
+            p{
+                color:rgb(172, 175, 179);
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-size: smaller;
+                text-align: center;
+            }
+            button{
+                background-color:rgb(99, 129, 238);
+                font-weight: bold;
+                color: white;
+                border-radius: 30px;
+                height: 40px;
+                width: 100px;
+                border-style: none;
+                text-align: center;
+                display: block;
+                margin: auto;
+            }
+            .container{
+                display: flex;
+                flex-direction: row;
+                gap: 25px;
+                justify-content: center;
+                flex-wrap: wrap;
+                padding-top: 10%;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div id="basic" class="item">
+                <p id="name">BASIC</p>
+                <p id="price">O.OO$ / mth</p>
+                <p>Please buy this membership. I need money. It is a very cool thing and will make you awesome</p>
+                 <button>SIGN UP</button>
+            </div>
+
+            <div id="premium" class="item">
+                <p id="name">PREMIUM</p>
+                <p id="price">4.99$ / mth</p>
+                <p>Please buy this membership. I need money. It is a very cool thing and will make you awesome</p>
+                <button>SIGN UP</button>
+            </div>
+
+            <div id="gigachad" class="item">
+                <p id="name">GIGACHAD</p>
+                <p id="price">9.99$ / mth</p>
+                <p>Please buy this membership. I need money. It is a very cool thing and will make you awesome</p>
+                <button>SIGN UP</button>
+            </div>
+
+        </div>
+    </body>
+</html>
