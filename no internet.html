@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.google.com</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction:column;
+            flex-wrap: wrap;
+            width: 85%;
+            align-content: center;
+            padding: 120px 0px 0px 0px;
+        }
+        p{
+            font-family: sans-serif;
+            font-size: 14px;
+            color: rgb(91, 90, 90);
+            
+        }
+        p#error{
+            font-family: sans-serif;
+            font-size: 12px;
+            color: rgb(91, 90, 90);
+            font-weight:20;
+        }   
+        li{
+            font-family: sans-serif;
+            font-size: 15px;
+            color:rgb(91, 90, 90);
+            font-weight:10;
+            margin-bottom: 5px;
+        }
+
+        p#title{
+            font-family: sans-serif;
+            font-size: 24px;
+            font-weight: 600;
+            color: rgb(22, 21, 21);
+        }
+       
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="item1">
+        <img src="dino.png" id="pic" height="51px" width="65px"/>
+    </div>
+    <div class="item">
+        <p id="title">No Internet</p>
+        <p>
+            Try:
+            <ul>
+                <li>Checking the network cables, modem and router</li>
+                <li>Reconnecting to Wi-Fi</li>
+                <li><a href="#">Running Windows Network Diagnostics</a></li>
+            </ul>
+        </p>
+        <p id="error">
+            ERR_INTERNET_DISCONNECTED
+        </p>
+    </div>
+    </div>
+</body>
+</html>
