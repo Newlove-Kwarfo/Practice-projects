@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EGL Login</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 180px;
+            background-color: rgb(15, 133, 163);
+        }
+        .container{
+            height: 360px;
+            width: 400px;
+            border-radius: 10px;
+            text-align: center;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            background-color: white;
+            
+        }
+        p#title{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            color: black;
+        }
+        hr{
+            width: 330px;
+            height:0px;
+            color: black;
+        }
+        #logo{
+            height: 60px;
+            width: 60px;
+        }
+
+        button{
+            border-radius: 10px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(15, 133, 163);
+            border-style: none;
+            font-weight: 600;
+            cursor: pointer;
+            height:35px;
+            width: 300px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p id="title">
+            <img src="logo.png" id="logo"><br>
+            EGL Login
+        </p>
+        <hr>
+        <form>
+            <p id="item">
+                Username: <input type="text" name="username" placeholder="Enter Username/email">
+            </p>
+            <p id="item">
+                Password: <input type="password" name="password" placeholder="Enter password">
+            </p>
+            <p id="item">
+                <input type="checkbox" name="remember me">Remember me
+            </p>
+            <p id="forgot">
+                <a href="#">Forgot password?</a> 
+            </p>
+            <button>LOGIN</button>
+        </form>
+    </div>
+</body>
+</html>
