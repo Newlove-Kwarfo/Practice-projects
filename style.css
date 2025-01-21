@@ -1,0 +1,169 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(girl.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+header{
+    height: 50px;
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap:5px
+}
+
+#dice{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#dice:hover{
+    background-color: rgba(255, 255, 255, 0.073);
+}
+
+
+#user{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#user:hover{
+    background-color: rgba(255, 255, 255, 0.073);
+}
+
+
+a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    outline: none;
+
+}
+a:link {
+    color: white;
+}
+a:visited {
+    color: white;
+}
+a:hover {
+    color: white;
+    text-decoration-line:underline ;
+}
+
+#title{
+    font-size: 90px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    height: 250px;
+    width: 600;
+ 
+}
+
+#search{
+    height: 50px;
+    width: 680px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 0px;
+    border-radius: 100px;
+
+}
+
+
+#tabiconb{
+    height: 30px;
+    border: 0;
+    background: none;
+}
+
+#tabicon{
+    height: 30px;
+    width: 30px;
+    border: 0;
+    border-radius: 50% ;
+    background: none;
+}
+#tabicon:hover{
+    background: rgba(0, 0, 0, 0.125);
+    cursor: pointer;
+    
+
+}
+#search-bar{
+    height: 40px;
+    width: 500px;
+    background: none;
+    border: 0;
+    font-size: 17px;
+}
+ #search-bar:focus{
+    outline: 0;
+}
+
+
+#icons{
+    height: 60%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#icon{
+    height: 50px;
+    width: 50px;
+}
+#iconbox{
+    height: 120px;
+    width: 120px;
+    border: 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#iconbox:hover{
+    background-color: rgba(255, 255, 255, 0.155);
+    cursor: pointer;
+}
+
+.pen{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    padding: 15px;
+}
+.pen:hover{
+    cursor: pointer;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
