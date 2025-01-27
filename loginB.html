@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky Login</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            height: 100vh;
+            background-image: url(sky.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .container{
+            height: 460px;
+            width: 360px;
+            border-radius: 40px;
+            border: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: linear-gradient(rgb(155, 224, 249), 15%, white);
+            box-shadow: 1px 1px 10px rgba(182, 181, 181, 0.501)
+        }
+        #logintop{
+            margin: 20px;
+            height: 50px;
+            width: 47px;
+            border-radius: 15px;
+            border: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            box-shadow: 2px 2px 10px rgba(155, 224, 249, 0.677)
+        
+        }
+      
+        #title{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: black;
+            font-size: 23px;
+            font-weight: 500;
+            height: 30px;
+            width: 300px;
+            border: 0;
+            display: flex;
+            justify-content: center;
+        }
+        
+        #subtitle{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgba(85, 84, 84, 0.803);
+            font-size: 14px;
+            font-weight: 400;
+            height: 40px;
+            width: 270px;
+            border: 0;
+            text-align: center;
+
+        }
+        #email{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgba(85, 84, 84, 0.803);
+            font-size: 13px;
+            height: 34px;
+            width: 290px;
+            border: 0;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            text-align: left;
+            margin-top: 10px;
+            background-color: rgba(214, 214, 214, 0.377);
+
+        }
+        #mailbox{
+            background-color: rgba(255, 255, 255, 0);
+            border: 0;
+            padding-left: 8px;
+        }
+        #mailbox:focus{
+            outline: 0;
+        }
+        #mailpic{
+           padding-left: 10px;
+        }
+
+
+        #password{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgba(85, 84, 84, 0.803);
+            font-size: 13px;
+            height: 34px;
+            width: 290px;
+            border: 0;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            text-align: left;
+            margin-top: 10px;
+            background-color: rgba(214, 214, 214, 0.377);
+
+        }
+        #passbox{
+            background-color: rgba(255, 255, 255, 0);
+            border: 0;
+            padding-left: 8px;
+        }
+        #passbox:focus{
+            outline: 0;
+        }
+        #lockpic{
+           padding-left: 10px;
+        }
+
+        #forgot{
+
+            height: 30px;
+            width: 270px;
+            border: 0;
+            text-align: right;
+            padding: 5px;
+        }
+        a:link{ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color:rgba(85, 84, 84, 0.707);
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+        }
+        a:visited{ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: black;
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration:underline;
+        }
+        #get_started{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            font-size: 15px;
+            font-weight: 400;
+            height: 34px;
+            width: 290px;
+            border: 0;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            text-align: left;
+            margin-top: 10px;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.726), rgba(0, 0, 0, 0.951));
+            text-align: center;
+            padding-left: 105px;
+        }
+        #sign_in{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgba(85, 84, 84, 0.803);
+            font-size: 13px;
+            height: 34px;
+            width: 290px;
+            border: 0;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 7px;
+            background-color: rgba(214, 214, 214, 0);
+        }
+
+        #login_btns{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 7px;
+        }
+        #google_btn{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+            background-color: white;
+            height: 34px;
+            width: 90px;
+            border: 0;
+            border-radius: 8px;
+            box-shadow: 1px 1px 5px rgba(182, 181, 181, 0.453)
+ 
+        }
+        #facebook_btn{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+            background-color: white;
+            height: 34px;
+            width: 90px;
+            border: 0;
+            border-radius: 8px;
+            box-shadow: 1px 1px 5px rgba(182, 181, 181, 0.453)
+        }
+        #apple_btn{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+            background-color: white;
+            height: 34px;
+            width: 90px;
+            border: 0;
+            border-radius: 8px;
+            box-shadow: 1px 1px 5px rgba(182, 181, 181, 0.453)
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="logintop">
+            <img src="loginicon.png" height="25px" width="25px"/>
+        </div>
+        <div id="title">Sign in with email</div>
+        <div id="subtitle">Make a new doc to bring your words, data and teams together. For free</div>
+        <div id="fillins">
+            <form>
+                <div id="email"><img src="mail.png" height= "15px" width="15px" id="mailpic"/><input type="text" placeholder="Email" id="mailbox"></div>
+                <div id="password"><img src="padlock.png" height="20px" width="20px" id="lockpic"/><input type="password" placeholder="Password" id="passbox"></div>
+            </form>
+            <div id="forgot"><a href="#">Forgot password?</a></div>
+            <button id="get_started">Get Started</button>
+        </div>
+        <div id="sign_in">
+            <p id="dots">. . . . . . . . . . . . </p>
+            <p>Or sign in with</p>
+            <p id="dots">. . . . . . . . . . . . </p>
+        </div>
+        <div id="login_btns">
+            <button id="google_btn"><img src="google.png" height="20px" width="20px"/></button>
+            <button id="facebook_btn"><img src="facebook_btn_pic.png" height="20px" width="20px"/></button>
+            <button id="apple_btn"><img src="blackapple.png" height="20px" width="17px"/></button>
+        </div>
+    </div>
+</body>
+</html>
